@@ -1,0 +1,23 @@
+# config/config.yml
+default:
+
+  output_dir: "output"
+
+tickers:
+  - AAPL
+  - MSFT 
+  - GOOGL
+
+investment_rules:
+  min_roic: 0.15
+  max_debt_equity: 0.6
+  target_margin_safety: 0.3
+
+investor_profile:
+  risk_tolerance: "medium"
+  max_single_allocation: 0.1
+  excluded_industries: ["crypto", "tobacco"]
+
+data_sources:
+  # alpha_vantage_key: "${ALPHA_VANTAGE_KEY}" # From environment variable
+  default_start_date: "2018-01-01"
